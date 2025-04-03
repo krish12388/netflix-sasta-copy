@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+body {
+  background-color: black;
+}
+.main {
+  height: 85vh;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/0cf2c109-3af1-4a9d-87d7-aecfac5fe881/web/IN-en-20250217-TRIFECTA-perspective_c3376e06-9aff-4657-aafb-91256a597b7c_large.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1800px, 100 vw);
+  position: relative;
+  margin-top: 0;
+}
+
+.main .box {
+  height: 85vh;
+  width: 100%;
+  opacity: 0.72;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+nav {
+  display: flex;
+  max-width: 180vh;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+nav img {
+  color: rgb(255, 0, 0);
+  width: 180px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  height: calc(100% - 62px);
+  display: flex;
+  font-family: "Playfair Display", serif;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  z-index: 10;
+  gap: 17px;
+}
+.hero > :first-child {
+  font-weight: 900;
+  font-size: 79px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.hero > :nth-child(2) {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 16px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.seperation {
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+  );
+}
+.trendbox{
+  height: 15vh;
+  width: 100%;
+  background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;;
+  margin-bottom: 0;
+}
+.btn {
+  padding: 3px 10px;
+  font-weight: bold;
+  background-color: rgba(23, 23, 23, 0.999);
+  border: 1px solid grey;
+  color: white;
+  border-radius: 14px;
+  padding: 10px 18px;
+  font-size: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-red {
+  background-color: rgb(233, 37, 37);
+  color: rgba(225, 225, 225, 10);
+  padding: 6px 18px;
+  font-size: 40px;
+  font-weight: bolder;
+  border: 1px solid grey;
+  text-align: center;
+  transition: 0.22s;
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: bolder;
+
+}
+.btn-red:hover{
+  opacity: 1.7;
+  background-color: #cd1c18;
+  background-image: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);
+}
+.main input {
+  padding: 6px 6px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 14px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid grey;
+  color: wheat;
+}
+.titlescroll{
+  margin-top: 0;
+  color: white;
+  font-size: 28px;
+  align-items: center;
+  justify-content: center;
+
+}
+.titlescroll> h2{
+  margin-left: 18lvb;
+  margin-bottom: 5vh;
+}
+#parent{
+  background-color: black;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.child{
+  height: 450px;
+  margin: 10px;
+  margin-left: 5vh;
+  background-color: rgb(11, 10, 10);
+  display: inline-block;
+  align-items: center center;
+  border: 2px transparent solid;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: 0.2s;
+  overflow: hidden;
+}
+.child:hover{
+  scale: 1.042;
+}
+.titlescroll2> h2{
+  margin-left: 18lvb;
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+}
+#detail{
+  background-color: black;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 8vh;
+}
+.info{
+  height: 440px;
+  width: 350px;
+  margin: 8px;
+  background: rgb(2,0,36);
+  background: -moz-linear-gradient(312deg, rgba(2,0,36,1) 30%, rgba(135,75,231,1) 59%, rgba(0,212,255,1) 82%);
+  background: -webkit-linear-gradient(312deg, rgba(2,0,36,1) 30%, rgba(135,75,231,1) 59%, rgba(0,212,255,1) 82%);
+  background: linear-gradient(312deg, rgba(2,0,36,1) 30%, rgba(135,75,231,1) 59%, rgba(0,212,255,1) 82%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+  display: inline-block;
+  align-items: center center;
+  border: 2px transparent solid;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: 0.2s;
+  overflow: hidden;
+  margin-left: 4lvb;
+  margin-right: 4lvb;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.info:hover{
+  scale: 1.042;
+}
+.content{
+  height: 100%;
+  display: flex;
+  font-family: "Playfair Display", serif;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 17px;
+}
+.content > :first-child {
+  font-weight: 900;
+  font-size: 31px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0;
+}
+.content > :nth-child(2) {
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0;
+}
+.faq> h2{
+  margin-left: 18lvb;
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+}
+.faqbox{
+  display: flex;
+  background-color: rgba(177, 165, 165, 0.1);
+  padding: 24px;
+  max-width: 70vw;
+  margin: auto 154px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  color: white;
+  transition: 1.02s;
+}
+.faqbox:hover{
+  scale: 1.042;
+}
+.out{
+  text-align: center;
+  padding-bottom: 5px;
+}
+.outbox{
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  padding: 84px 40px;
+  max-width: 40vw;
+  margin: -55px 464px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+.end> p{
+  padding: 10px 147px;
+  color: grey;
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  color: white;
+  margin: auto;
+  max-width: 60vw;
+  margin-bottom: 100px;
+}
+
